@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://corevisionitsolutions.com";
+  const baseUrl = "https://www.corevisionitsolutions.com";
 
   return [
     {
@@ -41,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
 
-    // Local SEO Pages
+    // Local SEO pages
     {
       url: `${baseUrl}/it-support-kuala-lumpur`,
       lastModified: new Date(),

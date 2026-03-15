@@ -9,27 +9,42 @@ import SupportBar from "@/components/SupportBar";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "CoreVision IT Solutions | IT Support Klang Valley",
+  title: {
+    default: "Managed IT Services & IT Support Klang Valley | CoreVision IT Solutions",
+    template: "%s | CoreVision IT Solutions",
+  },
   description:
-    "CoreVision provides managed IT services, IT support, and infrastructure solutions for SMEs across Klang Valley.",
-  keywords:
-    "IT support Klang Valley, Managed IT services Malaysia, SME IT support Malaysia, IT support Kuala Lumpur",
+    "Managed IT services, cybersecurity, and IT support for SMEs in Kuala Lumpur, Petaling Jaya, and across Klang Valley. CoreVision IT Solutions helps businesses stay secure and productive.",
+  keywords: [
+    "IT support Klang Valley",
+    "Managed IT services Malaysia",
+    "IT support Kuala Lumpur",
+    "IT support Petaling Jaya",
+    "Cybersecurity Malaysia",
+    "SME IT support Malaysia",
+  ],
+
+  metadataBase: new URL("https://www.corevisionitsolutions.com"),
 
   openGraph: {
-    title: "CoreVision IT Solutions",
+    title: "Managed IT Services & IT Support Klang Valley | CoreVision IT Solutions",
     description:
-      "Reliable managed IT services and IT support for growing businesses.",
+      "Reliable managed IT services, cybersecurity, and IT support for growing businesses across Klang Valley.",
     images: ["/og-image.jpg"],
-    url: "https://corevisionitsolutions.com",
+    url: "https://www.corevisionitsolutions.com",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "CoreVision IT Solutions | IT Support Klang Valley",
+    title: "CoreVision IT Solutions | Managed IT Services",
     description:
-      "Managed IT services and IT support for SMEs across Klang Valley.",
+      "Managed IT services and IT support for SMEs across Kuala Lumpur and Klang Valley.",
     images: ["/og-image.jpg"],
+  },
+
+  alternates: {
+    canonical: "https://www.corevisionitsolutions.com",
   },
 };
 
@@ -73,13 +88,13 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "ITService",
+              "@type": "LocalBusiness",
               name: "CoreVision IT Solutions",
-              url: "https://corevisionitsolutions.com",
+              url: "https://www.corevisionitsolutions.com",
               areaServed: "Klang Valley, Malaysia",
               serviceType: "Managed IT Services",
               description:
-                "CoreVision IT Solutions provides managed IT services, IT support, and infrastructure solutions for SMEs across Klang Valley.",
+                "CoreVision IT Solutions provides managed IT services, IT support, and infrastructure solutions for SMEs across Kuala Lumpur, Petaling Jaya, and Klang Valley.",
               provider: {
                 "@type": "Organization",
                 name: "CoreVision IT Solutions",
