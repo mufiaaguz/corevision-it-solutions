@@ -216,6 +216,90 @@ export default function Home() {
         </div>
       </section>
 
+            {/* NEW: Business Technology Services */}
+      <section className="section section-light">
+        <div className="container text-center">
+
+          <h2 className="heading-lg mb-6">
+            Business Technology Services
+          </h2>
+
+          <p className="text-body max-w-2xl mx-auto mb-12">
+            In addition to managed IT and support services, CoreVision also
+            provides specialised technology solutions including infrastructure,
+            automation systems and custom development projects.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+
+            <Link href="/network-infrastructure" className="card">
+              <h3 className="font-semibold mb-2">Network Infrastructure</h3>
+              <p className="text-body text-sm">
+                Professional business networking including routers, switches and WiFi deployment.
+              </p>
+            </Link>
+
+            <Link href="/office-it-setup" className="card">
+              <h3 className="font-semibold mb-2">Office IT Setup</h3>
+              <p className="text-body text-sm">
+                Complete office IT environment setup including devices, networking and security.
+              </p>
+            </Link>
+
+            <Link href="/pbx-phone-systems" className="card">
+              <h3 className="font-semibold mb-2">PBX Phone Systems</h3>
+              <p className="text-body text-sm">
+                Modern business phone systems designed for reliable communication.
+              </p>
+            </Link>
+
+            <Link href="/automation-solutions" className="card">
+              <h3 className="font-semibold mb-2">Automation Solutions</h3>
+              <p className="text-body text-sm">
+                Business workflow automation to reduce manual work and increase efficiency.
+              </p>
+            </Link>
+
+            <Link href="/business-tools-development" className="card">
+              <h3 className="font-semibold mb-2">Business Tools Development</h3>
+              <p className="text-body text-sm">
+                Custom internal tools and systems built to support operations.
+              </p>
+            </Link>
+
+            <Link href="/system-integrations" className="card">
+              <h3 className="font-semibold mb-2">System Integrations</h3>
+              <p className="text-body text-sm">
+                Connecting business platforms and software systems together.
+              </p>
+            </Link>
+
+            <Link href="/website-development" className="card">
+              <h3 className="font-semibold mb-2">Website Development</h3>
+              <p className="text-body text-sm">
+                High-performance business websites designed for growth.
+              </p>
+            </Link>
+
+            <Link href="/mobile-app-development" className="card">
+              <h3 className="font-semibold mb-2">Mobile App Development</h3>
+              <p className="text-body text-sm">
+                Custom mobile apps for business productivity and customer engagement.
+              </p>
+            </Link>
+
+            <Link href="/technology-consulting" className="card">
+              <h3 className="font-semibold mb-2">Technology Consulting</h3>
+              <p className="text-body text-sm">
+                Strategic technology planning and digital transformation guidance.
+              </p>
+            </Link>
+
+          </div>
+
+        </div>
+      </section>
+
       {/* NEW: How CoreVision IT Support Works */}
       <section className="section section-light">
         <div className="container text-center">
@@ -312,6 +396,169 @@ export default function Home() {
               <p className="text-body text-sm">
                 Antivirus management and patching keep systems protected.
               </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* Infrastructure Services */}
+      <section className="section section-white">
+        <div className="container text-center">
+
+          <h2 className="heading-lg mb-6">
+            Infrastructure Services
+          </h2>
+
+          <p className="text-body max-w-2xl mx-auto mb-12">
+            CoreVision designs and manages reliable IT environments
+            for businesses across Klang Valley including networks,
+            office infrastructure, and communication systems.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+
+            <div className="card">
+              <h3 className="heading-md mb-4">Managed IT</h3>
+              <p className="text-body mb-6">
+                Proactive monitoring and management of business IT
+                environments to reduce downtime and maintain stability.
+              </p>
+              <Link href="/managed-it" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">IT Support</h3>
+              <p className="text-body mb-6">
+                Fast remote and onsite IT support for businesses
+                across Kuala Lumpur and Klang Valley.
+              </p>
+              <Link href="/it-support" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">Network Infrastructure</h3>
+              <p className="text-body mb-6">
+                Secure and scalable network deployment including
+                routers, VLAN configuration, VPN, and firewall setup.
+              </p>
+              <Link href="/network-infrastructure" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">Office IT Setup</h3>
+              <p className="text-body mb-6">
+                Complete office IT deployment including workstations,
+                network configuration and device installation.
+              </p>
+              <Link href="/office-it-setup" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">PBX Phone Systems</h3>
+              <p className="text-body mb-6">
+                VoIP phone systems and PBX deployments designed
+                for modern business communication.
+              </p>
+              <Link href="/pbx-phone-systems" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      {/* Development & Automation */}
+      <section className="section section-light">
+        <div className="container text-center">
+
+          <h2 className="heading-lg mb-6">
+            Development & Automation
+          </h2>
+
+          <p className="text-body max-w-2xl mx-auto mb-12">
+            Beyond infrastructure, CoreVision helps businesses
+            modernise operations through software development,
+            automation, and system integration.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+
+            <div className="card">
+              <h3 className="heading-md mb-4">Website Development</h3>
+              <p className="text-body mb-6">
+                Professional business websites designed for
+                performance, reliability and search visibility.
+              </p>
+              <Link href="/website-development" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">Mobile App Development</h3>
+              <p className="text-body mb-6">
+                Mobile applications for business platforms,
+                customer portals and internal systems.
+              </p>
+              <Link href="/mobile-app-development" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">Custom Software Development</h3>
+              <p className="text-body mb-6">
+                Tailored software solutions designed to support
+                specific business workflows and operational needs.
+              </p>
+              <Link href="/custom-software-development" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">Automation Solutions</h3>
+              <p className="text-body mb-6">
+                Automate repetitive processes and workflows
+                to improve efficiency and reduce manual tasks.
+              </p>
+              <Link href="/automation-solutions" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">Business Tools Development</h3>
+              <p className="text-body mb-6">
+                Custom internal tools and dashboards that
+                improve productivity and reporting.
+              </p>
+              <Link href="/business-tools-development" className="btn-primary inline-block">
+                Learn More
+              </Link>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">System Integrations</h3>
+              <p className="text-body mb-6">
+                Connect different business platforms so data
+                flows seamlessly between systems.
+              </p>
+              <Link href="/system-integrations" className="btn-primary inline-block">
+                Learn More
+              </Link>
             </div>
 
           </div>

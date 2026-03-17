@@ -15,8 +15,8 @@ export default function Footer() {
           </h3>
 
           <p className="text-sm" style={{ color: "var(--accent-light)" }}>
-            Reliable IT support and managed IT services for growing businesses
-            across Klang Valley.
+            Reliable IT infrastructure, development, and automation
+            services for growing businesses across Klang Valley.
           </p>
 
           <p className="text-xs mt-4" style={{ color: "var(--accent-light)" }}>
@@ -25,9 +25,9 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Services */}
+        {/* Infrastructure */}
         <div>
-          <h4 className="font-semibold mb-3">Services</h4>
+          <h4 className="font-semibold mb-3">Infrastructure</h4>
 
           <ul className="space-y-2 text-sm">
 
@@ -36,7 +36,7 @@ export default function Footer() {
                 href="/managed-it"
                 className="text-[color:var(--accent-light)] hover:text-white transition-colors"
               >
-                Managed IT Services
+                Managed IT
               </Link>
             </li>
 
@@ -51,35 +51,111 @@ export default function Footer() {
 
             <li>
               <Link
-                href="/projects"
+                href="/network-infrastructure"
                 className="text-[color:var(--accent-light)] hover:text-white transition-colors"
               >
-                Infrastructure Projects
+                Network Infrastructure
               </Link>
             </li>
 
             <li>
               <Link
-                href="/projects"
+                href="/office-it-setup"
+                className="text-[color:var(--accent-light)] hover:text-white transition-colors"
+              >
+                Office IT Setup
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/pbx-phone-systems"
                 className="text-[color:var(--accent-light)] hover:text-white transition-colors"
               >
                 PBX Phone Systems
               </Link>
             </li>
 
+          </ul>
+        </div>
+
+        {/* Development */}
+        <div>
+          <h4 className="font-semibold mb-3">Development</h4>
+
+          <ul className="space-y-2 text-sm">
+
             <li>
               <Link
-                href="/projects"
+                href="/website-development"
                 className="text-[color:var(--accent-light)] hover:text-white transition-colors"
               >
-                Network Deployment
+                Website Development
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/mobile-app-development"
+                className="text-[color:var(--accent-light)] hover:text-white transition-colors"
+              >
+                Mobile App Development
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/custom-software-development"
+                className="text-[color:var(--accent-light)] hover:text-white transition-colors"
+              >
+                Custom Software Development
               </Link>
             </li>
 
           </ul>
         </div>
 
-        {/* Quick Links */}
+        {/* Automation */}
+        <div>
+          <h4 className="font-semibold mb-3">Automation</h4>
+
+          <ul className="space-y-2 text-sm">
+
+            <li>
+              <Link
+                href="/automation-solutions"
+                className="text-[color:var(--accent-light)] hover:text-white transition-colors"
+              >
+                Automation Solutions
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/business-tools-development"
+                className="text-[color:var(--accent-light)] hover:text-white transition-colors"
+              >
+                Business Tools Development
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                href="/system-integrations"
+                className="text-[color:var(--accent-light)] hover:text-white transition-colors"
+              >
+                System Integrations
+              </Link>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+      {/* Company Links */}
+      <div className="container pb-10 grid md:grid-cols-3 gap-8">
+
         <div>
           <h4 className="font-semibold mb-3">Company</h4>
 
@@ -90,7 +166,7 @@ export default function Footer() {
                 href="/about"
                 className="text-[color:var(--accent-light)] hover:text-white transition-colors"
               >
-                About CoreVision
+                About
               </Link>
             </li>
 
@@ -99,7 +175,7 @@ export default function Footer() {
                 href="/projects"
                 className="text-[color:var(--accent-light)] hover:text-white transition-colors"
               >
-                IT Projects
+                Projects
               </Link>
             </li>
 
@@ -111,37 +187,6 @@ export default function Footer() {
                 Contact
               </Link>
             </li>
-
-          </ul>
-        </div>
-
-        {/* Contact */}
-        <div>
-          <h4 className="font-semibold mb-3">Contact</h4>
-
-          <ul className="space-y-2 text-sm">
-
-            <li>
-              Phone:{" "}
-              <a
-                href="tel:01113037963"
-                className="text-[color:var(--accent-light)] hover:text-white transition-colors"
-              >
-                011-13037963
-              </a>
-            </li>
-
-            <li>
-              Email:{" "}
-              <a
-                href="mailto:support@corevisionitsolutions.com"
-                className="text-[color:var(--accent-light)] hover:text-white transition-colors"
-              >
-                support@corevisionitsolutions.com
-              </a>
-            </li>
-
-            <li>Klang Valley, Malaysia</li>
 
           </ul>
         </div>

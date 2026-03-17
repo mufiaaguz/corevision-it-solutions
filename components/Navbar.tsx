@@ -6,6 +6,9 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [infraOpen, setInfraOpen] = useState(false);
+  const [devOpen, setDevOpen] = useState(false);
+  const [autoOpen, setAutoOpen] = useState(false);
 
   return (
     <header
@@ -39,19 +42,82 @@ export default function Navbar() {
             Home
           </Link>
 
-          <Link
-            href="/managed-it"
-            className="hover:text-[var(--accent-color)] transition-colors"
-          >
-            Managed IT
-          </Link>
+          {/* Infrastructure */}
+          <div className="relative group">
+            <span className="cursor-pointer hover:text-[var(--accent-color)]">
+              Infrastructure
+            </span>
 
-          <Link
-            href="/it-support"
-            className="hover:text-[var(--accent-color)] transition-colors"
-          >
-            IT Support
-          </Link>
+            <div className="absolute left-0 top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 bg-white text-black rounded-lg shadow-lg w-64 p-4 space-y-2">
+
+              <Link href="/managed-it" className="block hover:text-[var(--accent-color)]">
+                Managed IT
+              </Link>
+
+              <Link href="/it-support" className="block hover:text-[var(--accent-color)]">
+                IT Support
+              </Link>
+
+              <Link href="/network-infrastructure" className="block hover:text-[var(--accent-color)]">
+                Network Infrastructure
+              </Link>
+
+              <Link href="/office-it-setup" className="block hover:text-[var(--accent-color)]">
+                Office IT Setup
+              </Link>
+
+              <Link href="/pbx-phone-systems" className="block hover:text-[var(--accent-color)]">
+                PBX Phone Systems
+              </Link>
+
+            </div>
+          </div>
+
+          {/* Development */}
+          <div className="relative group">
+            <span className="cursor-pointer hover:text-[var(--accent-color)]">
+              Development
+            </span>
+
+            <div className="absolute left-0 top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 bg-white text-black rounded-lg shadow-lg w-64 p-4 space-y-2">
+
+              <Link href="/website-development" className="block hover:text-[var(--accent-color)]">
+                Website Development
+              </Link>
+
+              <Link href="/mobile-app-development" className="block hover:text-[var(--accent-color)]">
+                Mobile App Development
+              </Link>
+
+              <Link href="/custom-software-development" className="block hover:text-[var(--accent-color)]">
+                Custom Software Development
+              </Link>
+
+            </div>
+          </div>
+
+          {/* Automation */}
+          <div className="relative group">
+            <span className="cursor-pointer hover:text-[var(--accent-color)]">
+              Automation
+            </span>
+
+            <div className="absolute left-0 top-full opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200 bg-white text-black rounded-lg shadow-lg w-64 p-4 space-y-2">
+
+              <Link href="/automation-solutions" className="block hover:text-[var(--accent-color)]">
+                Automation Solutions
+              </Link>
+
+              <Link href="/business-tools-development" className="block hover:text-[var(--accent-color)]">
+                Business Tools Development
+              </Link>
+
+              <Link href="/system-integrations" className="block hover:text-[var(--accent-color)]">
+                System Integrations
+              </Link>
+
+            </div>
+          </div>
 
           <Link
             href="/projects"
@@ -108,25 +174,59 @@ export default function Navbar() {
 
             <Link href="/" onClick={() => setOpen(false)}>Home</Link>
 
-            <Link href="/managed-it" onClick={() => setOpen(false)}>
-              Managed IT
-            </Link>
+            {/* Infrastructure */}
+            <button
+              onClick={() => setInfraOpen(!infraOpen)}
+              className="text-left"
+            >
+              Infrastructure
+            </button>
 
-            <Link href="/it-support" onClick={() => setOpen(false)}>
-              IT Support
-            </Link>
+            {infraOpen && (
+              <div className="pl-4 flex flex-col gap-2">
+                <Link href="/managed-it">Managed IT</Link>
+                <Link href="/it-support">IT Support</Link>
+                <Link href="/network-infrastructure">Network Infrastructure</Link>
+                <Link href="/office-it-setup">Office IT Setup</Link>
+                <Link href="/pbx-phone-systems">PBX Phone Systems</Link>
+              </div>
+            )}
 
-            <Link href="/projects" onClick={() => setOpen(false)}>
-              Projects
-            </Link>
+            {/* Development */}
+            <button
+              onClick={() => setDevOpen(!devOpen)}
+              className="text-left"
+            >
+              Development
+            </button>
 
-            <Link href="/about" onClick={() => setOpen(false)}>
-              About
-            </Link>
+            {devOpen && (
+              <div className="pl-4 flex flex-col gap-2">
+                <Link href="/website-development">Website Development</Link>
+                <Link href="/mobile-app-development">Mobile App Development</Link>
+                <Link href="/custom-software-development">Custom Software Development</Link>
+              </div>
+            )}
 
-            <Link href="/contact" onClick={() => setOpen(false)}>
-              Contact
-            </Link>
+            {/* Automation */}
+            <button
+              onClick={() => setAutoOpen(!autoOpen)}
+              className="text-left"
+            >
+              Automation
+            </button>
+
+            {autoOpen && (
+              <div className="pl-4 flex flex-col gap-2">
+                <Link href="/automation-solutions">Automation Solutions</Link>
+                <Link href="/business-tools-development">Business Tools Development</Link>
+                <Link href="/system-integrations">System Integrations</Link>
+              </div>
+            )}
+
+            <Link href="/projects">Projects</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
 
             <Link
               href="/contact"

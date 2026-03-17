@@ -39,6 +39,14 @@ export default function Projects() {
                 <li>Workstation deployment</li>
                 <li>Printer configuration</li>
                 <li>User access setup</li>
+                <li>
+                  <Link
+                    href="/office-it-setup"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Learn more about Office IT Setup
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -56,6 +64,14 @@ export default function Projects() {
                 <li>File sharing setup</li>
                 <li>Backup configuration</li>
                 <li>User permission management</li>
+                <li>
+                  <Link
+                    href="/technology-consulting"
+                    className="text-blue-600 hover:underline text-sm"
+                  >
+                    Explore Technology Consulting
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -73,6 +89,14 @@ export default function Projects() {
                 <li>VPN setup</li>
                 <li>Network optimisation</li>
                 <li>Infrastructure troubleshooting</li>
+                <li>
+                  <Link
+                    href="/network-infrastructure"
+                    className="text-blue-600 hover:underline text-sm"
+                  >
+                    View Network Infrastructure Services
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -91,6 +115,13 @@ export default function Projects() {
                 <li>Auto attendant (IVR)</li>
                 <li>SIP trunk configuration</li>
               </ul>
+
+              <Link
+                href="/pbx-phone-systems"
+                className="text-blue-600 hover:underline text-sm"
+              >
+                View PBX Phone System Services
+              </Link>
             </div>
 
             {/* Office Relocation */}
@@ -149,6 +180,90 @@ export default function Projects() {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* Example Project Implementations */}
+      <section className="section section-light">
+        <div className="container text-center">
+
+          <h2 className="heading-lg mb-6">
+            Example Technology Projects
+          </h2>
+
+          <p className="text-body max-w-2xl mx-auto mb-12">
+            CoreVision supports businesses with practical technology
+            implementations that improve reliability, communication
+            and operational efficiency.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+
+            <div className="card">
+              <h3 className="heading-md mb-4">
+                Office IT Infrastructure Deployment
+              </h3>
+              <p className="text-body">
+                Complete office technology setup including network
+                configuration, workstation deployment, firewall setup
+                and secure connectivity for new offices.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">
+                Network Infrastructure Installation
+              </h3>
+              <p className="text-body">
+                Structured networks designed for stability including
+                VLAN configuration, secure remote access, and
+                performance optimisation.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">
+                PBX Communication Systems
+              </h3>
+              <p className="text-body">
+                Deployment of business phone systems with extension
+                management, call routing, IVR systems and SIP trunk
+                integration.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">
+                Business Website Platforms
+              </h3>
+              <p className="text-body">
+                Professional websites designed for search visibility,
+                customer engagement and digital presence.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">
+                Mobile Business Applications
+              </h3>
+              <p className="text-body">
+                Mobile apps that support internal operations,
+                customer engagement and business platforms.
+              </p>
+            </div>
+
+            <div className="card">
+              <h3 className="heading-md mb-4">
+                Business Automation Systems
+              </h3>
+              <p className="text-body">
+                Automation solutions that streamline workflows,
+                connect platforms and reduce manual operational tasks.
+              </p>
+            </div>
+
+          </div>
+
         </div>
       </section>
 
