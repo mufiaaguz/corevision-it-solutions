@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Phone, CheckCircle2, PhoneCall, Network, Users } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  CheckCircle2,
+  PhoneCall,
+  Network,
+  Users,
+  Coins
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Business PBX Phone Systems Klang Valley | CoreVision IT",
@@ -57,10 +65,16 @@ const benefits = [
     icon: Network
   },
   {
+    title: "Improved Internal Communication",
+    description:
+      "Extensions allow fast communication between team members.",
+    icon: Phone
+  },
+  {
     title: "Lower Communication Costs",
     description:
       "VoIP phone systems can reduce traditional telephony costs.",
-    icon: Phone
+    icon: Coins
   }
 ];
 
@@ -128,9 +142,11 @@ const relatedLinks = [
 export default function PBXPhoneSystemsPage() {
   return (
     <>
-      <section className="section" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+      <section
+        className="section"
+        style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+      >
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
-
           <div>
             <div className="mb-4 text-sm font-medium text-white/80">
               Business PBX Phone Systems
@@ -158,41 +174,44 @@ export default function PBXPhoneSystemsPage() {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">
-
             <div className="card text-center">
               <Phone size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">VoIP Deployment</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                VoIP Deployment
+              </h3>
             </div>
 
             <div className="card text-center">
               <Users size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Department Extensions</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Department Extensions
+              </h3>
             </div>
 
             <div className="card text-center">
               <PhoneCall size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Call Routing</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Call Routing
+              </h3>
             </div>
 
             <div className="card text-center">
               <Network size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">VoIP Network Integration</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                VoIP Network Integration
+              </h3>
             </div>
-
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container max-w-4xl">
-
           <h2 className="heading-lg mb-6 text-center">
             Reliable Business Communication Infrastructure
           </h2>
 
           <div className="card">
-
             <p className="text-body mb-5">
               Reliable communication is essential for any business. A structured
               business phone system ensures calls are handled professionally,
@@ -211,15 +230,12 @@ export default function PBXPhoneSystemsPage() {
               traditional lines, or a modern VoIP solution, we ensure your
               communication infrastructure is reliable and easy to manage.
             </p>
-
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Services & Capabilities</h2>
           </div>
@@ -232,18 +248,16 @@ export default function PBXPhoneSystemsPage() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Benefits for Businesses</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
             {benefits.map((benefit) => {
               const Icon = benefit.icon;
 
@@ -256,13 +270,11 @@ export default function PBXPhoneSystemsPage() {
               );
             })}
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">How the Service Works</h2>
           </div>
@@ -277,13 +289,11 @@ export default function PBXPhoneSystemsPage() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container">
-
           <div
             className="card text-center"
             style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
@@ -302,15 +312,12 @@ export default function PBXPhoneSystemsPage() {
                 Request PBX System Consultation
               </Link>
             </div>
-
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Related Services</h2>
           </div>
@@ -327,10 +334,8 @@ export default function PBXPhoneSystemsPage() {
               </Link>
             ))}
           </div>
-
         </div>
       </section>
-
     </>
   );
 }

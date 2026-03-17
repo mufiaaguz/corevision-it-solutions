@@ -10,6 +10,13 @@ export default function Navbar() {
   const [devOpen, setDevOpen] = useState(false);
   const [autoOpen, setAutoOpen] = useState(false);
 
+  const closeMobileMenu = () => {
+    setOpen(false);
+    setInfraOpen(false);
+    setDevOpen(false);
+    setAutoOpen(false);
+  };
+
   return (
     <header
       className="w-full sticky top-0 z-50 border-b backdrop-blur-md"
@@ -20,135 +27,185 @@ export default function Navbar() {
     >
       <div className="container flex items-center justify-between h-[72px]">
 
-        {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src="/logoa.png" alt="CoreVision" width={140} height={40} />
+          <Image
+            src="/logoa.png"
+            alt="CoreVision IT Solutions"
+            width={180}
+            height={40}
+            priority
+            className="h-10 w-auto"
+          />
         </Link>
 
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-6 text-white text-sm">
+        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-white">
 
-          <Link href="/">Home</Link>
+          <Link href="/" className="hover:text-[var(--accent-color)] transition-colors">
+            Home
+          </Link>
 
-          {/* Infrastructure */}
-          <div className="relative group">
-            <button className="hover:text-[#6DB8D6]">Infrastructure</button>
-            <div className="absolute top-full left-0 mt-2 w-64 bg-white text-black rounded-xl shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
-              <div className="flex flex-col p-4 gap-2 text-sm">
-                <Link href="/managed-it">Managed IT</Link>
-                <Link href="/it-support">IT Support</Link>
-                <Link href="/network-infrastructure">Network Infrastructure</Link>
-                <Link href="/office-it-setup">Office IT Setup</Link>
-                <Link href="/pbx-phone-systems">PBX Phone Systems</Link>
+          <div className="relative group py-2">
+            <span className="cursor-pointer hover:text-[var(--accent-color)]">
+              Infrastructure
+            </span>
+
+            <div className="absolute left-0 top-full w-64 pt-2 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200">
+              <div className="bg-white text-black rounded-lg shadow-lg p-4 space-y-2">
+                <Link href="/managed-it" className="block hover:text-[var(--accent-color)]">
+                  Managed IT
+                </Link>
+                <Link href="/it-support" className="block hover:text-[var(--accent-color)]">
+                  IT Support
+                </Link>
+                <Link href="/network-infrastructure" className="block hover:text-[var(--accent-color)]">
+                  Network Infrastructure
+                </Link>
+                <Link href="/office-it-setup" className="block hover:text-[var(--accent-color)]">
+                  Office IT Setup
+                </Link>
+                <Link href="/pbx-phone-systems" className="block hover:text-[var(--accent-color)]">
+                  PBX Phone Systems
+                </Link>
               </div>
             </div>
           </div>
 
-          {/* Development */}
-          <div className="relative group">
-            <button className="hover:text-[#6DB8D6]">Development</button>
-            <div className="absolute top-full left-0 mt-2 w-64 bg-white text-black rounded-xl shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
-              <div className="flex flex-col p-4 gap-2 text-sm">
-                <Link href="/website-development">Website Development</Link>
-                <Link href="/mobile-app-development">Mobile App Development</Link>
-                <Link href="/custom-software-development">Custom Software</Link>
+          <div className="relative group py-2">
+            <span className="cursor-pointer hover:text-[var(--accent-color)]">
+              Development
+            </span>
+
+            <div className="absolute left-0 top-full w-64 pt-2 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200">
+              <div className="bg-white text-black rounded-lg shadow-lg p-4 space-y-2">
+                <Link href="/website-development" className="block hover:text-[var(--accent-color)]">
+                  Website Development
+                </Link>
+                <Link href="/mobile-app-development" className="block hover:text-[var(--accent-color)]">
+                  Mobile App Development
+                </Link>
+                <Link href="/custom-software-development" className="block hover:text-[var(--accent-color)]">
+                  Custom Software Development
+                </Link>
               </div>
             </div>
           </div>
 
-          {/* Automation */}
-          <div className="relative group">
-            <button className="hover:text-[#6DB8D6]">Automation</button>
-            <div className="absolute top-full left-0 mt-2 w-64 bg-white text-black rounded-xl shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition">
-              <div className="flex flex-col p-4 gap-2 text-sm">
-                <Link href="/automation-solutions">Automation Solutions</Link>
-                <Link href="/business-tools-development">Business Tools</Link>
-                <Link href="/system-integrations">System Integrations</Link>
+          <div className="relative group py-2">
+            <span className="cursor-pointer hover:text-[var(--accent-color)]">
+              Automation
+            </span>
+
+            <div className="absolute left-0 top-full w-64 pt-2 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-all duration-200">
+              <div className="bg-white text-black rounded-lg shadow-lg p-4 space-y-2">
+                <Link href="/automation-solutions" className="block hover:text-[var(--accent-color)]">
+                  Automation Solutions
+                </Link>
+                <Link href="/business-tools-development" className="block hover:text-[var(--accent-color)]">
+                  Business Tools Development
+                </Link>
+                <Link href="/system-integrations" className="block hover:text-[var(--accent-color)]">
+                  System Integrations
+                </Link>
               </div>
             </div>
           </div>
 
-          <Link href="/projects">Projects</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact</Link>
+          <Link href="/projects" className="hover:text-[var(--accent-color)] transition-colors">
+            Projects
+          </Link>
+
+          <Link href="/about" className="hover:text-[var(--accent-color)] transition-colors">
+            About
+          </Link>
+
+          <Link href="/contact" className="hover:text-[var(--accent-color)] transition-colors">
+            Contact
+          </Link>
+
         </nav>
 
-        {/* CTA */}
         <div className="hidden md:block">
-          <Link href="/contact" className="btn-primary">
+          <Link
+            href="/contact"
+            className="btn-primary shadow-md hover:shadow-lg transition-all"
+          >
             Request Consultation
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          aria-label="Toggle navigation menu"
+          aria-expanded={open}
           onClick={() => setOpen(!open)}
+          className="md:hidden text-white text-2xl"
         >
           ☰
         </button>
+
       </div>
 
-      {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-[#1F2F57] text-white px-6 pb-6">
+        <div className="md:hidden border-t" style={{ background: "var(--primary-color)" }}>
+          <div className="container flex flex-col py-4 gap-4 text-sm text-white">
 
-          <Link href="/" className="block py-2">Home</Link>
+            <Link href="/" onClick={closeMobileMenu}>Home</Link>
 
-          {/* Infrastructure */}
-          <button
-            onClick={() => setInfraOpen(!infraOpen)}
-            className="w-full text-left py-2"
-          >
-            Infrastructure
-          </button>
-          {infraOpen && (
-            <div className="pl-4 text-sm">
-              <Link href="/managed-it" className="block py-1">Managed IT</Link>
-              <Link href="/it-support" className="block py-1">IT Support</Link>
-              <Link href="/network-infrastructure" className="block py-1">Network Infrastructure</Link>
-              <Link href="/office-it-setup" className="block py-1">Office IT Setup</Link>
-              <Link href="/pbx-phone-systems" className="block py-1">PBX Phone Systems</Link>
-            </div>
-          )}
+            <button
+              onClick={() => setInfraOpen(!infraOpen)}
+              className="text-left"
+              aria-expanded={infraOpen}
+            >
+              Infrastructure
+            </button>
+            {infraOpen && (
+              <div className="pl-4 flex flex-col gap-2">
+                <Link href="/managed-it" onClick={closeMobileMenu}>Managed IT</Link>
+                <Link href="/it-support" onClick={closeMobileMenu}>IT Support</Link>
+                <Link href="/network-infrastructure" onClick={closeMobileMenu}>Network Infrastructure</Link>
+                <Link href="/office-it-setup" onClick={closeMobileMenu}>Office IT Setup</Link>
+                <Link href="/pbx-phone-systems" onClick={closeMobileMenu}>PBX Phone Systems</Link>
+              </div>
+            )}
 
-          {/* Development */}
-          <button
-            onClick={() => setDevOpen(!devOpen)}
-            className="w-full text-left py-2"
-          >
-            Development
-          </button>
-          {devOpen && (
-            <div className="pl-4 text-sm">
-              <Link href="/website-development" className="block py-1">Website Development</Link>
-              <Link href="/mobile-app-development" className="block py-1">Mobile App Development</Link>
-              <Link href="/custom-software-development" className="block py-1">Custom Software</Link>
-            </div>
-          )}
+            <button
+              onClick={() => setDevOpen(!devOpen)}
+              className="text-left"
+              aria-expanded={devOpen}
+            >
+              Development
+            </button>
+            {devOpen && (
+              <div className="pl-4 flex flex-col gap-2">
+                <Link href="/website-development" onClick={closeMobileMenu}>Website Development</Link>
+                <Link href="/mobile-app-development" onClick={closeMobileMenu}>Mobile App Development</Link>
+                <Link href="/custom-software-development" onClick={closeMobileMenu}>Custom Software Development</Link>
+              </div>
+            )}
 
-          {/* Automation */}
-          <button
-            onClick={() => setAutoOpen(!autoOpen)}
-            className="w-full text-left py-2"
-          >
-            Automation
-          </button>
-          {autoOpen && (
-            <div className="pl-4 text-sm">
-              <Link href="/automation-solutions" className="block py-1">Automation Solutions</Link>
-              <Link href="/business-tools-development" className="block py-1">Business Tools</Link>
-              <Link href="/system-integrations" className="block py-1">System Integrations</Link>
-            </div>
-          )}
+            <button
+              onClick={() => setAutoOpen(!autoOpen)}
+              className="text-left"
+              aria-expanded={autoOpen}
+            >
+              Automation
+            </button>
+            {autoOpen && (
+              <div className="pl-4 flex flex-col gap-2">
+                <Link href="/automation-solutions" onClick={closeMobileMenu}>Automation Solutions</Link>
+                <Link href="/business-tools-development" onClick={closeMobileMenu}>Business Tools Development</Link>
+                <Link href="/system-integrations" onClick={closeMobileMenu}>System Integrations</Link>
+              </div>
+            )}
 
-          <Link href="/projects" className="block py-2">Projects</Link>
-          <Link href="/about" className="block py-2">About</Link>
-          <Link href="/contact" className="block py-2">Contact</Link>
+            <Link href="/projects" onClick={closeMobileMenu}>Projects</Link>
+            <Link href="/about" onClick={closeMobileMenu}>About</Link>
+            <Link href="/contact" onClick={closeMobileMenu}>Contact</Link>
 
-          <Link href="/contact" className="btn-primary mt-4 inline-block">
-            Request Consultation
-          </Link>
+            <Link href="/contact" onClick={closeMobileMenu} className="btn-primary text-center mt-2">
+              Request Consultation
+            </Link>
+
+          </div>
         </div>
       )}
     </header>

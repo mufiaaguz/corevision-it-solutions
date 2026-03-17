@@ -232,7 +232,7 @@ export default function Solutions() {
           </p>
 
           <Link
-            href="/technology-consulting"
+            href="/custom-software-development"
             className="btn-primary"
           >
             Explore Consulting Services

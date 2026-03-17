@@ -3,106 +3,106 @@ import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle2,
-  Smartphone,
-  Layout,
-  Cloud,
+  Layers3,
   Workflow,
-  Layers3
+  Database,
+  Link2,
+  Expand
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Mobile App Development Services Klang Valley | CoreVision IT",
+  title: "Custom Software Development Klang Valley | CoreVision IT",
   description:
-    "CoreVision develops custom mobile applications for SMEs across Klang Valley including business apps, customer platforms, and integrated mobile solutions.",
+    "CoreVision provides custom software development services for SMEs across Klang Valley including business systems, client portals, and scalable web applications.",
   keywords: [
-    "Mobile app development Klang Valley",
-    "Business mobile apps Malaysia",
-    "SME mobile application development",
-    "Internal mobile apps Malaysia",
-    "Mobile software development Klang Valley"
+    "Custom software development Klang Valley",
+    "Business systems development Malaysia",
+    "Custom web application development Malaysia",
+    "Client portal development Klang Valley",
+    "SME software development Malaysia"
   ],
   alternates: {
-    canonical: "https://www.corevisionitsolutions.com/mobile-app-development"
+    canonical: "https://www.corevisionitsolutions.com/custom-software-development"
   },
   openGraph: {
-    title: "Mobile App Development Services Klang Valley | CoreVision IT",
+    title: "Custom Software Development Klang Valley | CoreVision IT",
     description:
-      "Custom mobile applications designed for business productivity and operational efficiency.",
-    url: "https://www.corevisionitsolutions.com/mobile-app-development",
+      "Custom software solutions designed to streamline operations and support business growth.",
+    url: "https://www.corevisionitsolutions.com/custom-software-development",
     siteName: "CoreVision IT Solutions",
     type: "website"
   }
 };
 
 const services = [
-  "Custom mobile application development",
-  "Business process mobile applications",
-  "Customer service and booking applications",
-  "Internal workflow mobile tools",
-  "Integration with existing business systems",
-  "API-based mobile app integrations",
-  "Mobile app UI/UX design",
-  "Application deployment and maintenance"
+  "Custom web-based business systems",
+  "Internal management platforms",
+  "Client portals and service platforms",
+  "Business workflow management systems",
+  "Data management and reporting systems",
+  "Software integration with existing systems",
+  "API development and integration",
+  "Scalable web application platforms"
 ];
 
 const benefits = [
   {
-    title: "Improved Customer Accessibility",
+    title: "Tailored to Your Workflow",
     description:
-      "Customers can interact with your business directly through mobile applications.",
-    icon: Smartphone
-  },
-  {
-    title: "Increased Operational Efficiency",
-    description:
-      "Mobile apps allow employees to access systems and manage tasks remotely.",
+      "Custom software is designed specifically for your business processes.",
     icon: Workflow
   },
   {
-    title: "Digital Service Delivery",
+    title: "Improved Operational Efficiency",
     description:
-      "Businesses can deliver services digitally through mobile platforms.",
-    icon: Layout
-  },
-  {
-    title: "Real-Time Data Access",
-    description:
-      "Applications can connect to business systems and provide instant information.",
-    icon: Cloud
-  },
-  {
-    title: "Scalable Technology Platform",
-    description:
-      "Mobile applications can evolve with new features as your business expands.",
+      "Automated systems reduce manual tasks and improve productivity.",
     icon: Layers3
+  },
+  {
+    title: "Centralised Business Operations",
+    description:
+      "Custom platforms allow businesses to manage multiple processes in one system.",
+    icon: Database
+  },
+  {
+    title: "Integration with Existing Systems",
+    description:
+      "Software can connect with CRM systems, accounting platforms, and internal tools.",
+    icon: Link2
+  },
+  {
+    title: "Scalable Business Platform",
+    description:
+      "Custom software can expand with additional features as your business grows.",
+    icon: Expand
   }
 ];
 
 const processSteps = [
   {
-    title: "1. Business Requirement Analysis",
+    title: "1. Requirement Analysis",
     description:
-      "We evaluate your business goals and determine how a mobile application can support operations."
+      "We review your current workflows, systems, and business requirements."
   },
   {
-    title: "2. Application Planning",
+    title: "2. System Planning",
     description:
-      "A mobile application structure and feature list are designed."
+      "A software architecture and feature set are designed."
   },
   {
     title: "3. Development",
     description:
-      "The application is developed using modern mobile technologies and frameworks."
+      "The application is developed using modern development frameworks and technologies."
   },
   {
-    title: "4. Testing & Optimisation",
+    title: "4. Testing & Deployment",
     description:
-      "The app is tested for usability, performance, and device compatibility."
+      "The system is tested thoroughly before deployment."
   },
   {
-    title: "5. Deployment & Support",
+    title: "5. Ongoing Improvement",
     description:
-      "The mobile application is deployed and ongoing support is available for updates and improvements."
+      "Software can be enhanced and expanded as your business evolves."
   }
 ];
 
@@ -111,35 +111,41 @@ const relatedLinks = [
     href: "/website-development",
     title: "Website Development",
     description:
-      "Professional business websites designed for performance and growth."
+      "Professional business websites and service platforms designed for growth."
   },
   {
-    href: "/custom-software-development",
-    title: "Custom Software Development",
+    href: "/mobile-app-development",
+    title: "Mobile App Development",
     description:
-      "Tailored software solutions designed to support business workflows and operational needs."
+      "Mobile applications that support business operations and customer engagement."
   },
   {
     href: "/system-integrations",
     title: "System Integrations",
     description:
-      "Connect applications and platforms across your business systems."
+      "Connect business systems and automate data flow between platforms."
+  },
+  {
+    href: "/automation-solutions",
+    title: "Automation Solutions",
+    description:
+      "Automate repetitive work and improve operational efficiency."
   },
   {
     href: "/projects",
     title: "Projects",
     description:
-      "Examples of CoreVision technology and development projects."
+      "Examples of CoreVision technology implementations and business solutions."
   },
   {
     href: "/contact",
     title: "Contact",
     description:
-      "Discuss your mobile application requirements with our team."
+      "Discuss your software development requirements with our team."
   }
 ];
 
-export default function MobileAppDevelopmentPage() {
+export default function CustomSoftwareDevelopmentPage() {
   return (
     <>
       <section
@@ -150,22 +156,22 @@ export default function MobileAppDevelopmentPage() {
 
           <div>
             <div className="mb-4 text-sm font-medium text-white/80">
-              Mobile App Development Services
+              Custom Software Development
             </div>
 
             <h1 className="heading-xl mb-6 text-white">
-              Custom Mobile App Development for Modern Businesses
+              Custom Software Solutions Built for Your Business
             </h1>
 
             <p className="mb-8 max-w-2xl text-lg text-white/90">
-              CoreVision develops mobile applications that help businesses
-              streamline operations, improve customer engagement, and extend
-              services to mobile platforms.
+              CoreVision develops tailored software solutions that help
+              businesses streamline operations, manage data efficiently,
+              and build scalable digital platforms.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">
-                Start Your Mobile App Project
+                Discuss Your Software Project
               </Link>
 
               <Link href="/projects" className="btn-secondary-light">
@@ -177,23 +183,31 @@ export default function MobileAppDevelopmentPage() {
           <div className="grid gap-6 sm:grid-cols-2">
 
             <div className="card text-center">
-              <Smartphone size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Business Mobile Apps</h3>
+              <Layers3 size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Business Systems
+              </h3>
             </div>
 
             <div className="card text-center">
               <Workflow size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Operational Tools</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Workflow Platforms
+              </h3>
             </div>
 
             <div className="card text-center">
-              <Cloud size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Integrated Systems</h3>
+              <Database size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Data Management
+              </h3>
             </div>
 
             <div className="card text-center">
-              <Layout size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Customer Platforms</h3>
+              <Link2 size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
+              <h3 className="heading-md text-[var(--primary-color)]">
+                System Integrations
+              </h3>
             </div>
 
           </div>
@@ -205,31 +219,31 @@ export default function MobileAppDevelopmentPage() {
         <div className="container max-w-4xl">
 
           <h2 className="heading-lg mb-6 text-center">
-            Business Applications Designed for Mobile Use
+            Software Built Around Your Business Processes
           </h2>
 
           <div className="card">
 
             <p className="text-body mb-5">
-              Mobile applications allow businesses to connect with customers,
-              manage operations remotely, and provide services through
-              convenient digital platforms. As businesses grow, mobile apps can
-              become valuable tools for improving customer interaction and
-              internal workflows.
+              Many growing businesses reach a point where standard software
+              tools no longer meet their operational needs. Custom software
+              allows organisations to design systems that match their workflows,
+              automate processes, and integrate multiple systems into a single
+              platform.
             </p>
 
             <p className="text-body mb-5">
-              CoreVision provides mobile app development services for
-              businesses across Klang Valley. We design and develop
-              applications that are reliable, user-friendly, and aligned
-              with business objectives.
+              CoreVision provides custom software development services for
+              businesses across Klang Valley. We design and develop applications
+              tailored to your business processes, helping you improve
+              efficiency, reduce manual work, and manage operations more
+              effectively.
             </p>
 
             <p className="text-body mb-5">
-              Whether you need a customer-facing application, an internal
-              business tool, or a platform that integrates with your existing
-              systems, our team can develop a mobile solution that supports
-              your business growth.
+              Whether you need an internal system, a client platform, or a
+              specialised operational tool, our team can develop software that
+              supports your long-term business growth.
             </p>
 
             <p className="text-body">
@@ -314,17 +328,17 @@ export default function MobileAppDevelopmentPage() {
             style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
           >
             <h2 className="heading-lg mb-4 text-white">
-              Planning to Launch a Mobile Application?
+              Need a System Built Around Your Business Processes?
             </h2>
 
             <p className="mx-auto mb-8 max-w-3xl text-white/90">
-              CoreVision can design and develop mobile applications that support
-              business operations and improve customer engagement.
+              CoreVision can develop custom software that improves operational
+              efficiency and supports long-term growth.
             </p>
 
             <div className="flex justify-center gap-4 flex-wrap">
               <Link href="/contact" className="btn-primary">
-                Request Mobile App Development Consultation
+                Request Software Development Consultation
               </Link>
             </div>
 
@@ -340,7 +354,7 @@ export default function MobileAppDevelopmentPage() {
             <h2 className="heading-lg mb-4">Related Services</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {relatedLinks.map((link) => (
               <Link key={link.href} href={link.href} className="card block">
                 <h3 className="heading-md mb-3">{link.title}</h3>
@@ -355,7 +369,6 @@ export default function MobileAppDevelopmentPage() {
 
         </div>
       </section>
-
     </>
   );
 }

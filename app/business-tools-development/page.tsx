@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, LayoutDashboard, Database, Workflow, BarChart3 } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  LayoutDashboard,
+  Database,
+  Workflow,
+  BarChart3,
+  Expand
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Custom Business Tools Development Klang Valley | CoreVision IT",
@@ -61,6 +69,12 @@ const benefits = [
     description:
       "Teams can track tasks, requests, and operational processes more effectively.",
     icon: LayoutDashboard
+  },
+  {
+    title: "Scalable Systems",
+    description:
+      "Tools can evolve as your business grows.",
+    icon: Expand
   }
 ];
 
@@ -122,7 +136,10 @@ const relatedLinks = [
 export default function BusinessToolsDevelopmentPage() {
   return (
     <>
-      <section className="section" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+      <section
+        className="section"
+        style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+      >
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
 
           <div>
@@ -233,7 +250,7 @@ export default function BusinessToolsDevelopmentPage() {
             <h2 className="heading-lg mb-4">Benefits for Businesses</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
             {benefits.map((benefit) => {
               const Icon = benefit.icon;
 
@@ -274,7 +291,10 @@ export default function BusinessToolsDevelopmentPage() {
       <section className="section section-white">
         <div className="container">
 
-          <div className="card text-center" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+          <div
+            className="card text-center"
+            style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+          >
             <h2 className="heading-lg mb-4 text-white">
               Need a System That Matches Your Business Workflow?
             </h2>

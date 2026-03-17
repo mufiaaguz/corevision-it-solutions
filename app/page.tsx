@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
-import { ShieldCheck, Server, Wrench } from "lucide-react";
-import Counter from "@/components/Counter";
+import { ShieldCheck, Server, Wrench, Code, Workflow } from "lucide-react";
 
 export default function Home() {
   return (
@@ -11,9 +10,7 @@ export default function Home() {
       {/* Trust Metrics */}
       <section className="section section-light">
         <div className="container">
-
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-
             <div>
               <p className="text-3xl font-bold text-accent">24/7</p>
               <p className="text-sm text-muted mt-1">System Monitoring</p>
@@ -33,16 +30,66 @@ export default function Home() {
               <p className="text-3xl font-bold text-accent">Klang Valley</p>
               <p className="text-sm text-muted mt-1">Local IT Support</p>
             </div>
-
           </div>
+        </div>
+      </section>
 
+      {/* Complete Business Technology Solutions */}
+      <section className="section section-white">
+        <div className="container text-center">
+          <h2 className="heading-lg mb-6">
+            Complete Business Technology Solutions
+          </h2>
+
+          <p className="text-body max-w-2xl mx-auto mb-12">
+            CoreVision supports businesses with IT infrastructure, software
+            development, and automation solutions — giving growing businesses
+            a complete technology foundation for modern operations.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+            <div className="card">
+              <Server style={{ color: "var(--accent-color)" }} className="mb-4" size={36} />
+              <h3 className="heading-md mb-4">Infrastructure</h3>
+              <p className="text-body mb-6">
+                Managed IT, IT support, networking, office setup,
+                and business communication systems.
+              </p>
+              <Link href="/managed-it" className="btn-primary inline-block">
+                Explore Infrastructure
+              </Link>
+            </div>
+
+            <div className="card">
+              <Code style={{ color: "var(--accent-color)" }} className="mb-4" size={36} />
+              <h3 className="heading-md mb-4">Development</h3>
+              <p className="text-body mb-6">
+                Websites, mobile applications, and custom software
+                tailored to business workflows and growth.
+              </p>
+              <Link href="/website-development" className="btn-primary inline-block">
+                Explore Development
+              </Link>
+            </div>
+
+            <div className="card">
+              <Workflow style={{ color: "var(--accent-color)" }} className="mb-4" size={36} />
+              <h3 className="heading-md mb-4">Automation</h3>
+              <p className="text-body mb-6">
+                Workflow automation, business tools, and system
+                integrations that improve efficiency.
+              </p>
+              <Link href="/automation-solutions" className="btn-primary inline-block">
+                Explore Automation
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Trusted Businesses */}
       <section className="section section-white">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             Built for Growing Businesses
           </h2>
@@ -54,7 +101,6 @@ export default function Home() {
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-
             <div className="card text-center">
               <p className="font-semibold">Law Firms</p>
             </div>
@@ -74,7 +120,6 @@ export default function Home() {
             <div className="card text-center">
               <p className="font-semibold">Growing SMEs</p>
             </div>
-
           </div>
 
           <div className="mt-12 max-w-3xl mx-auto">
@@ -87,14 +132,12 @@ export default function Home() {
               </p>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* Services Overview */}
       <section className="section section-white">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             IT Services Designed for Growing Businesses
           </h2>
@@ -105,10 +148,8 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
-
             <div className="card text-left">
               <ShieldCheck style={{ color: "var(--accent-color)" }} className="mb-4" size={36} />
-
               <h3 className="heading-md mb-4">
                 Managed IT Services
               </h3>
@@ -125,7 +166,6 @@ export default function Home() {
 
             <div className="card text-left">
               <Wrench style={{ color: "var(--accent-color)" }} className="mb-4" size={36} />
-
               <h3 className="heading-md mb-4">
                 IT Support
               </h3>
@@ -135,14 +175,13 @@ export default function Home() {
                 business needs technical assistance.
               </p>
 
-              <Link href="/it-support" className="btn-primary inline-block">
-                Get Support
+              <Link href="/contact" className="btn-primary inline-block">
+                Request Consultation
               </Link>
             </div>
 
             <div className="card text-left">
               <Server style={{ color: "var(--accent-color)" }} className="mb-4" size={36} />
-
               <h3 className="heading-md mb-4">
                 Infrastructure Projects
               </h3>
@@ -156,16 +195,13 @@ export default function Home() {
                 Learn More
               </Link>
             </div>
-
           </div>
-
         </div>
       </section>
 
-      {/* NEW: Managed IT Plans Preview */}
+      {/* Managed IT Plans Preview */}
       <section className="section section-light">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             Managed IT Service Plans
           </h2>
@@ -176,7 +212,6 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-
             <div className="card">
               <h3 className="heading-md mb-3">Core Start</h3>
               <p className="text-accent font-bold mb-2">RM1200 / month</p>
@@ -210,16 +245,13 @@ export default function Home() {
                 View Details
               </Link>
             </div>
-
           </div>
-
         </div>
       </section>
 
-            {/* NEW: Business Technology Services */}
+      {/* Business Technology Services */}
       <section className="section section-light">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             Business Technology Services
           </h2>
@@ -231,7 +263,6 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-
             <Link href="/network-infrastructure" className="card">
               <h3 className="font-semibold mb-2">Network Infrastructure</h3>
               <p className="text-body text-sm">
@@ -288,28 +319,24 @@ export default function Home() {
               </p>
             </Link>
 
-            <Link href="/technology-consulting" className="card">
-              <h3 className="font-semibold mb-2">Technology Consulting</h3>
+            <Link href="/custom-software-development" className="card">
+              <h3 className="font-semibold mb-2">Custom Software Development</h3>
               <p className="text-body text-sm">
-                Strategic technology planning and digital transformation guidance.
+                Tailored software platforms built around business workflows and operational needs.
               </p>
             </Link>
-
           </div>
-
         </div>
       </section>
 
-      {/* NEW: How CoreVision IT Support Works */}
+      {/* How CoreVision IT Support Works */}
       <section className="section section-light">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-10">
             How CoreVision IT Support Works
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-
             <div className="card">
               <h3 className="font-semibold mb-2">1. IT Environment Assessment</h3>
               <p className="text-body text-sm">
@@ -333,43 +360,35 @@ export default function Home() {
                 business systems remain stable and secure.
               </p>
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* Industries */}
       <section className="section section-light">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-10">
             Supporting Businesses Across Multiple Industries
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-
             <div className="card text-center"><p className="font-semibold">Law Firms</p></div>
             <div className="card text-center"><p className="font-semibold">Medical Clinics</p></div>
             <div className="card text-center"><p className="font-semibold">Professional Offices</p></div>
             <div className="card text-center"><p className="font-semibold">Retail Businesses</p></div>
             <div className="card text-center"><p className="font-semibold">Growing SMEs</p></div>
-
           </div>
-
         </div>
       </section>
 
       {/* Why CoreVision */}
       <section className="section section-white">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-10">
             Why Businesses Choose CoreVision
           </h2>
 
           <div className="grid md:grid-cols-4 gap-8 text-left">
-
             <div className="card">
               <h3 className="font-semibold mb-2">Proactive Monitoring</h3>
               <p className="text-body text-sm">
@@ -397,16 +416,13 @@ export default function Home() {
                 Antivirus management and patching keep systems protected.
               </p>
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* Infrastructure Services */}
       <section className="section section-white">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             Infrastructure Services
           </h2>
@@ -418,7 +434,6 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-
             <div className="card">
               <h3 className="heading-md mb-4">Managed IT</h3>
               <p className="text-body mb-6">
@@ -473,16 +488,13 @@ export default function Home() {
                 Learn More
               </Link>
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* Development & Automation */}
       <section className="section section-light">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             Development & Automation
           </h2>
@@ -494,7 +506,6 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 text-left">
-
             <div className="card">
               <h3 className="heading-md mb-4">Website Development</h3>
               <p className="text-body mb-6">
@@ -560,38 +571,31 @@ export default function Home() {
                 Learn More
               </Link>
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* Technology Partners */}
       <section className="section section-light">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-10">
             Technology We Support
           </h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-sm font-semibold">
-
             <div className="card text-center">Microsoft</div>
             <div className="card text-center">Lenovo</div>
             <div className="card text-center">Bitdefender</div>
             <div className="card text-center">Synology</div>
             <div className="card text-center">Ubiquiti</div>
             <div className="card text-center">Fortinet</div>
-
           </div>
-
         </div>
       </section>
 
       {/* SLA Section */}
       <section className="section section-white">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             Service Level Agreement
           </h2>
@@ -602,7 +606,6 @@ export default function Home() {
           </p>
 
           <table className="sla-table">
-
             <thead>
               <tr>
                 <th>Priority</th>
@@ -641,22 +644,18 @@ export default function Home() {
                 <td>Within 3 business days</td>
               </tr>
             </tbody>
-
           </table>
-
         </div>
       </section>
 
       {/* FAQ */}
       <section className="section section-white">
         <div className="container">
-
           <h2 className="heading-lg text-center mb-10">
             Frequently Asked Questions
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-
             <div className="card">
               <h3 className="font-semibold mb-2">
                 What is Managed IT Services?
@@ -698,16 +697,13 @@ export default function Home() {
                 require reliable IT support without a full internal IT team.
               </p>
             </div>
-
           </div>
-
         </div>
       </section>
 
       {/* Free IT System Assessment */}
       <section className="section section-light">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             Free IT System Assessment
           </h2>
@@ -721,14 +717,12 @@ export default function Home() {
           <Link href="/contact" className="btn-primary">
             Request Free Assessment
           </Link>
-
         </div>
       </section>
 
       {/* IT Support Locations */}
       <section className="section section-white">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             IT Support Across Klang Valley
           </h2>
@@ -740,7 +734,6 @@ export default function Home() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-6">
-
             <Link href="/it-support-kuala-lumpur" className="card text-center">
               <p className="font-semibold">
                 IT Support Kuala Lumpur
@@ -758,16 +751,13 @@ export default function Home() {
                 Managed IT Services Klang Valley
               </p>
             </Link>
-
           </div>
-
         </div>
       </section>
 
       {/* CTA */}
       <section className="section section-light">
         <div className="container text-center">
-
           <h2 className="heading-lg mb-6">
             Need Reliable IT Support?
           </h2>
@@ -780,7 +770,6 @@ export default function Home() {
           <Link href="/contact" className="btn-primary">
             Contact CoreVision
           </Link>
-
         </div>
       </section>
     </>

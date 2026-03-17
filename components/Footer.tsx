@@ -6,9 +6,9 @@ export default function Footer() {
       className="mt-20 text-white"
       style={{ background: "var(--primary-color)" }}
     >
-      <div className="container py-12 grid md:grid-cols-4 gap-8">
+      <div className="container py-12 grid md:grid-cols-5 gap-8">
 
-        {/* Company */}
+        {/* Company Intro */}
         <div>
           <h3 className="text-lg font-semibold mb-3">
             CoreVision IT Solutions
@@ -30,7 +30,6 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">Infrastructure</h4>
 
           <ul className="space-y-2 text-sm">
-
             <li>
               <Link
                 href="/managed-it"
@@ -75,7 +74,6 @@ export default function Footer() {
                 PBX Phone Systems
               </Link>
             </li>
-
           </ul>
         </div>
 
@@ -84,7 +82,6 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">Development</h4>
 
           <ul className="space-y-2 text-sm">
-
             <li>
               <Link
                 href="/website-development"
@@ -111,7 +108,6 @@ export default function Footer() {
                 Custom Software Development
               </Link>
             </li>
-
           </ul>
         </div>
 
@@ -120,7 +116,6 @@ export default function Footer() {
           <h4 className="font-semibold mb-3">Automation</h4>
 
           <ul className="space-y-2 text-sm">
-
             <li>
               <Link
                 href="/automation-solutions"
@@ -147,20 +142,14 @@ export default function Footer() {
                 System Integrations
               </Link>
             </li>
-
           </ul>
         </div>
 
-      </div>
-
-      {/* Company Links */}
-      <div className="container pb-10 grid md:grid-cols-3 gap-8">
-
+        {/* Company Links */}
         <div>
           <h4 className="font-semibold mb-3">Company</h4>
 
           <ul className="space-y-2 text-sm">
-
             <li>
               <Link
                 href="/about"
@@ -187,7 +176,6 @@ export default function Footer() {
                 Contact
               </Link>
             </li>
-
           </ul>
         </div>
 

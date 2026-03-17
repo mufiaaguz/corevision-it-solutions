@@ -1,23 +1,33 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Network, Database, Workflow, Link2 } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Network,
+  Database,
+  Workflow,
+  Link2,
+  Gauge,
+  Eye,
+  Layers3
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Business System Integrations Klang Valley | CoreVision IT",
+  title: "System Integration Services Klang Valley | CoreVision IT",
   description:
-    "CoreVision provides business system integration services across Klang Valley, connecting software platforms, automating workflows, and synchronising data between systems.",
+    "CoreVision provides system integration services for SMEs across Klang Valley including Microsoft 365 integrations, API connections, and automated data workflows.",
   keywords: [
     "System integration services Klang Valley",
     "Business software integration Malaysia",
     "API integration services SME Malaysia",
-    "Business platform integration Klang Valley",
+    "Microsoft 365 integration Klang Valley",
     "Workflow integration services"
   ],
   alternates: {
     canonical: "https://www.corevisionitsolutions.com/system-integrations"
   },
   openGraph: {
-    title: "Business System Integrations Klang Valley | CoreVision IT",
+    title: "System Integration Services Klang Valley | CoreVision IT",
     description:
       "Integrate business systems and automate workflows between platforms.",
     url: "https://www.corevisionitsolutions.com/system-integrations",
@@ -27,68 +37,73 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  "Integration between CRM, accounting, and operational systems",
-  "API integrations between business platforms",
-  "Data synchronisation between applications",
-  "Automation between multiple software tools",
-  "Cloud application integration",
-  "Workflow data sharing between systems",
-  "Database integration services",
-  "System migration and data transfer integration"
+  "Microsoft 365 integrations",
+  "API integrations between business systems",
+  "Data synchronisation between platforms",
+  "Workflow automation between applications",
+  "Integration between internal tools and cloud services",
+  "Monitoring and alert integrations",
+  "Reporting integrations across systems"
 ];
 
 const benefits = [
   {
-    title: "Unified Business Systems",
-    description:
-      "Connect separate systems so information flows smoothly across your organisation.",
-    icon: Network
-  },
-  {
     title: "Reduced Manual Data Entry",
     description:
-      "Automated data transfer removes repetitive manual updates.",
+      "Systems can automatically share data, reducing repetitive work.",
     icon: Workflow
   },
   {
     title: "Improved Data Accuracy",
     description:
-      "Integrated systems minimise errors caused by duplicated data entry.",
+      "Automation reduces errors caused by manual updates.",
     icon: Database
   },
   {
-    title: "Streamlined Operations",
+    title: "Faster Business Processes",
     description:
-      "Departments can work more efficiently when systems communicate automatically.",
-    icon: Link2
+      "Integrated systems improve operational speed and efficiency.",
+    icon: Gauge
+  },
+  {
+    title: "Better System Visibility",
+    description:
+      "Information can be accessed from centralised dashboards or tools.",
+    icon: Eye
+  },
+  {
+    title: "Scalable Business Technology",
+    description:
+      "Integrations allow businesses to add new systems without disrupting existing workflows.",
+    icon: Layers3
   }
 ];
 
 const processSteps = [
   {
-    title: "1. System Analysis",
+    title: "1. System Review",
     description:
-      "We review the platforms currently used in your business environment."
+      "We analyse the systems your business currently uses and identify integration opportunities."
   },
   {
     title: "2. Integration Planning",
     description:
-      "Our team identifies integration points and data flow requirements."
+      "A solution is designed to connect systems and automate data flow."
   },
   {
-    title: "3. Integration Development",
+    title: "3. Development & Configuration",
     description:
-      "Secure connections and automation processes are implemented."
+      "Integration tools and connections are developed and implemented."
   },
   {
-    title: "4. Testing & Validation",
+    title: "4. Testing",
     description:
-      "System interactions are tested to ensure reliable operation."
+      "Systems are tested to ensure data transfers correctly and workflows function properly."
   },
   {
     title: "5. Deployment & Support",
     description:
-      "Integrated systems are deployed and monitored for stability."
+      "The integration is deployed with support available for future improvements."
   }
 ];
 
@@ -128,27 +143,30 @@ const relatedLinks = [
 export default function SystemIntegrationsPage() {
   return (
     <>
-      <section className="section" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+      <section
+        className="section"
+        style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+      >
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
 
           <div>
             <div className="mb-4 text-sm font-medium text-white/80">
-              System Integrations
+              System Integration Solutions
             </div>
 
             <h1 className="heading-xl mb-6 text-white">
-              Connect Business Systems and Automate Data Flow
+              Connect Your Business Systems and Automate Workflows
             </h1>
 
             <p className="mb-8 max-w-2xl text-lg text-white/90">
-              CoreVision helps businesses integrate different software platforms
-              so information flows automatically between systems, reducing manual
-              work and improving operational efficiency.
+              CoreVision helps businesses integrate their systems so applications
+              work together seamlessly, reducing manual processes and improving
+              operational efficiency.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">
-                Discuss a System Integration
+                Discuss an Integration Project
               </Link>
 
               <Link href="/projects" className="btn-secondary-light">
@@ -171,7 +189,7 @@ export default function SystemIntegrationsPage() {
 
             <div className="card text-center">
               <Workflow size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Workflow Integration</h3>
+              <h3 className="heading-md">Workflow Automation</h3>
             </div>
 
             <div className="card text-center">
@@ -194,22 +212,23 @@ export default function SystemIntegrationsPage() {
           <div className="card">
 
             <p className="text-body mb-5">
-              Many businesses rely on multiple software systems such as accounting
-              platforms, CRM tools, reporting systems, and operational software.
-              When these systems operate independently, employees often need to
-              manually transfer data between platforms.
+              Many businesses use multiple systems to manage operations — such as
+              email platforms, accounting software, CRM systems, file storage,
+              and internal tools. When these systems operate independently, teams
+              often need to manually transfer data between platforms.
             </p>
 
             <p className="text-body mb-5">
-              CoreVision provides system integration services that connect these
-              platforms together. Automated integration ensures that data flows
-              seamlessly across systems, reducing errors and saving valuable time.
+              CoreVision provides system integration solutions that connect
+              business applications and automate data flow between systems. By
+              integrating platforms, businesses can reduce repetitive work,
+              improve accuracy, and ensure information is available where it is
+              needed.
             </p>
 
             <p className="text-body">
-              By integrating systems effectively, businesses gain better visibility
-              across operations while reducing the complexity of managing multiple
-              disconnected platforms.
+              Our integration solutions help SMEs simplify their technology
+              environments while improving operational efficiency.
             </p>
 
           </div>
@@ -243,7 +262,7 @@ export default function SystemIntegrationsPage() {
             <h2 className="heading-lg mb-4">Benefits for Businesses</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
             {benefits.map((benefit) => {
               const Icon = benefit.icon;
 
@@ -289,17 +308,17 @@ export default function SystemIntegrationsPage() {
             style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
           >
             <h2 className="heading-lg mb-4 text-white">
-              Connect Your Business Systems
+              Want Your Business Systems to Work Together Seamlessly?
             </h2>
 
             <p className="mx-auto mb-8 max-w-3xl text-white/90">
-              CoreVision can integrate your systems to simplify workflows,
-              automate processes, and improve data visibility.
+              CoreVision can integrate your applications and automate data flows
+              to improve operational efficiency.
             </p>
 
             <div className="flex justify-center gap-4 flex-wrap">
               <Link href="/contact" className="btn-primary">
-                Request Integration Consultation
+                Plan Your System Integration
               </Link>
             </div>
 

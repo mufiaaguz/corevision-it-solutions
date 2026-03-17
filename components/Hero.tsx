@@ -17,28 +17,29 @@ export default function Hero() {
           </div>
 
           <h1 className="heading-xl mb-6 text-white">
-            Reliable IT Support for Growing Businesses
+            IT Infrastructure, Software & Automation for Growing Businesses
           </h1>
 
           <p className="text-lg mb-8 text-white/90">
-            CoreVision IT Solutions delivers managed IT services, proactive
-            system monitoring, and professional technical support for
-            businesses across Klang Valley.
+            CoreVision IT Solutions helps businesses across Klang Valley build,
+            manage, and improve their technology environment — from managed IT
+            services and support to websites, custom systems, and automation
+            solutions.
           </p>
 
           {/* Trust Indicators */}
           <div className="flex flex-wrap gap-4 mb-8 text-sm text-white/90">
 
             <span className="bg-white/10 px-3 py-1 rounded">
-              Managed IT Services
+              Infrastructure
             </span>
 
             <span className="bg-white/10 px-3 py-1 rounded">
-              SME IT Specialists
+              Development
             </span>
 
             <span className="bg-white/10 px-3 py-1 rounded">
-              Remote & Onsite Support
+              Automation
             </span>
 
           </div>
@@ -46,11 +47,11 @@ export default function Hero() {
           <div className="flex gap-4 flex-wrap">
 
             <Link href="/contact" className="btn-primary">
-              Request IT Support
+              Request Consultation
             </Link>
 
             <Link href="/managed-it" className="btn-secondary-light">
-              View Managed IT Plans
+              View Services
             </Link>
 
           </div>
@@ -73,37 +74,37 @@ export default function Hero() {
 
           <div className="card text-center">
             <h3 className="font-semibold mb-2 text-[var(--primary-color)]">
-              24/7 Monitoring
+              Infrastructure
             </h3>
             <p className="text-sm text-[var(--text-muted)]">
-              Continuous system monitoring to prevent downtime.
+              Managed IT, networking, office setup and business systems support.
             </p>
           </div>
 
           <div className="card text-center">
             <h3 className="font-semibold mb-2 text-[var(--primary-color)]">
-              Security Protection
+              Development
             </h3>
             <p className="text-sm text-[var(--text-muted)]">
-              Managed antivirus and patch management.
+              Websites, mobile applications and custom software for business growth.
             </p>
           </div>
 
           <div className="card text-center">
             <h3 className="font-semibold mb-2 text-[var(--primary-color)]">
-              Fast IT Support
+              Automation
             </h3>
             <p className="text-sm text-[var(--text-muted)]">
-              Remote and onsite technical support.
+              Workflow automation, internal tools and system integrations.
             </p>
           </div>
 
           <div className="card text-center">
             <h3 className="font-semibold mb-2 text-[var(--primary-color)]">
-              Predictable Cost
+              Local Support
             </h3>
             <p className="text-sm text-[var(--text-muted)]">
-              Fixed monthly IT service plans.
+              Remote and onsite support for businesses across Klang Valley.
             </p>
           </div>
 

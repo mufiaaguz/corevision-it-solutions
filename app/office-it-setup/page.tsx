@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Laptop, Network, Printer, Server } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Laptop,
+  Network,
+  Printer,
+  Server,
+  Layers3
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Office IT Setup Services Klang Valley | CoreVision IT",
@@ -61,6 +69,12 @@ const benefits = [
     description:
       "Professional installation reduces common setup errors.",
     icon: Printer
+  },
+  {
+    title: "Scalable Systems",
+    description:
+      "Your IT environment can expand easily as your business grows.",
+    icon: Layers3
   }
 ];
 
@@ -123,9 +137,11 @@ const relatedLinks = [
 export default function OfficeITSetupPage() {
   return (
     <>
-      <section className="section" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+      <section
+        className="section"
+        style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+      >
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
-
           <div>
             <div className="mb-4 text-sm font-medium text-white/80">
               Office IT Setup Services
@@ -156,31 +172,37 @@ export default function OfficeITSetupPage() {
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="card text-center">
               <Laptop size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Workstation Deployment</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Workstation Deployment
+              </h3>
             </div>
 
             <div className="card text-center">
               <Network size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Office Networking</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Office Networking
+              </h3>
             </div>
 
             <div className="card text-center">
               <Server size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Server & Storage Setup</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Server & Storage Setup
+              </h3>
             </div>
 
             <div className="card text-center">
               <Printer size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Printer & Device Setup</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Printer & Device Setup
+              </h3>
             </div>
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container max-w-4xl">
-
           <h2 className="heading-lg mb-6 text-center">
             Structured IT Deployment for Modern Offices
           </h2>
@@ -205,13 +227,11 @@ export default function OfficeITSetupPage() {
               deployed and ready for daily operations.
             </p>
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Services & Capabilities</h2>
             <p className="text-body mx-auto max-w-3xl">
@@ -222,23 +242,21 @@ export default function OfficeITSetupPage() {
           <div className="grid gap-6 md:grid-cols-2">
             {services.map((service) => (
               <div key={service} className="card flex gap-4">
-                <CheckCircle2 size={22} className="text-[var(--accent-color)] mt-1" />
+                <CheckCircle2 size={22} className="mt-1 text-[var(--accent-color)]" />
                 <p className="text-body">{service}</p>
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Benefits for Businesses</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
             {benefits.map((benefit) => {
               const Icon = benefit.icon;
 
@@ -251,13 +269,11 @@ export default function OfficeITSetupPage() {
               );
             })}
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">How the Service Works</h2>
           </div>
@@ -272,14 +288,15 @@ export default function OfficeITSetupPage() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container">
-
-          <div className="card text-center" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+          <div
+            className="card text-center"
+            style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+          >
             <h2 className="heading-lg mb-4 text-white">
               Opening a New Office or Expanding Your Workspace?
             </h2>
@@ -294,15 +311,12 @@ export default function OfficeITSetupPage() {
                 Request Office IT Setup Consultation
               </Link>
             </div>
-
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Related Services</h2>
           </div>
@@ -319,10 +333,8 @@ export default function OfficeITSetupPage() {
               </Link>
             ))}
           </div>
-
         </div>
       </section>
-
     </>
   );
 }

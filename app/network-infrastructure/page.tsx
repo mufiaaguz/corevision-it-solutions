@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Network, Shield, Wifi, Wrench } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Network,
+  Shield,
+  Wifi,
+  Wrench,
+  Layers3
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Network Infrastructure Services for Businesses | CoreVision IT",
@@ -61,7 +69,7 @@ const benefits = [
     title: "Scalable IT Environment",
     description:
       "Network infrastructure can grow as your business expands.",
-    icon: ArrowRight
+    icon: Layers3
   },
   {
     title: "Reliable Remote Access",
@@ -135,7 +143,10 @@ const relatedLinks = [
 export default function NetworkInfrastructurePage() {
   return (
     <>
-      <section className="section" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+      <section
+        className="section"
+        style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+      >
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
           <div>
             <div className="mb-4 text-sm font-medium text-white/80">
@@ -166,36 +177,36 @@ export default function NetworkInfrastructurePage() {
 
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="card text-center">
-              <h2 className="mb-2 font-semibold text-[var(--primary-color)]">
+              <h3 className="mb-2 font-semibold text-[var(--primary-color)]">
                 Router & Firewall Setup
-              </h2>
+              </h3>
               <p className="text-sm text-[var(--text-muted)]">
                 Structured deployment for secure and reliable connectivity.
               </p>
             </div>
 
             <div className="card text-center">
-              <h2 className="mb-2 font-semibold text-[var(--primary-color)]">
+              <h3 className="mb-2 font-semibold text-[var(--primary-color)]">
                 Office WiFi Deployment
-              </h2>
+              </h3>
               <p className="text-sm text-[var(--text-muted)]">
                 Stable wireless coverage designed for day-to-day business use.
               </p>
             </div>
 
             <div className="card text-center">
-              <h2 className="mb-2 font-semibold text-[var(--primary-color)]">
+              <h3 className="mb-2 font-semibold text-[var(--primary-color)]">
                 VPN Connectivity
-              </h2>
+              </h3>
               <p className="text-sm text-[var(--text-muted)]">
                 Secure remote access for staff working across locations.
               </p>
             </div>
 
             <div className="card text-center">
-              <h2 className="mb-2 font-semibold text-[var(--primary-color)]">
+              <h3 className="mb-2 font-semibold text-[var(--primary-color)]">
                 Network Optimisation
-              </h2>
+              </h3>
               <p className="text-sm text-[var(--text-muted)]">
                 Improve reliability, performance, and long-term scalability.
               </p>
@@ -269,7 +280,7 @@ export default function NetworkInfrastructurePage() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
             {benefits.map((benefit) => {
               const Icon = benefit.icon;
 

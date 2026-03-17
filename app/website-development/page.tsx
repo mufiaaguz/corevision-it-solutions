@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Globe, Layout, Smartphone, Search } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Globe,
+  Layout,
+  Smartphone,
+  Search,
+  Layers3
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Website Development Services Klang Valley | CoreVision IT",
   description:
-    "CoreVision provides professional website development services for businesses across Klang Valley including corporate websites, landing pages, and business platforms.",
+    "CoreVision provides professional website development services for SMEs across Klang Valley including business websites, web applications, and modern responsive platforms.",
   keywords: [
     "Website development Klang Valley",
     "Business website design Malaysia",
@@ -19,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Website Development Services Klang Valley | CoreVision IT",
     description:
-      "Professional business websites designed for performance, credibility, and growth.",
+      "Professional business websites designed for performance, reliability, and growth.",
     url: "https://www.corevisionitsolutions.com/website-development",
     siteName: "CoreVision IT Solutions",
     type: "website"
@@ -27,128 +35,139 @@ export const metadata: Metadata = {
 };
 
 const services = [
-  "Corporate business websites",
-  "Landing page development",
+  "Business website design and development",
   "Company profile websites",
-  "Website redesign and upgrades",
-  "Mobile responsive website design",
-  "SEO-friendly website structure",
-  "Business service websites",
-  "Website performance optimisation"
+  "Service and product websites",
+  "Custom web application development",
+  "Website redesign and modernisation",
+  "Mobile-responsive website design",
+  "Content management system (CMS) integration",
+  "Website performance optimisation",
+  "Integration with internal tools and business systems"
 ];
 
 const benefits = [
   {
-    title: "Professional Online Presence",
+    title: "Professional Brand Presence",
     description:
-      "A modern website helps build credibility and trust with customers.",
+      "A modern website strengthens credibility and presents your company professionally.",
     icon: Globe
   },
   {
-    title: "Mobile Friendly Experience",
+    title: "Better Customer Engagement",
     description:
-      "Responsive design ensures websites work across phones, tablets, and desktops.",
-    icon: Smartphone
-  },
-  {
-    title: "Structured Business Content",
-    description:
-      "Well organised pages make it easy for visitors to understand your services.",
+      "Visitors can easily understand your services and contact your business.",
     icon: Layout
   },
   {
-    title: "SEO Friendly Structure",
+    title: "Mobile-Friendly Experience",
     description:
-      "Optimised structure improves visibility in search engines.",
+      "Responsive design ensures your website works smoothly across all devices.",
+    icon: Smartphone
+  },
+  {
+    title: "Scalable Digital Platform",
+    description:
+      "Websites can grow with additional features as your business expands.",
+    icon: Layers3
+  },
+  {
+    title: "Integration with Business Systems",
+    description:
+      "Your website can connect with CRM systems, internal tools, or automation workflows.",
     icon: Search
   }
 ];
 
 const processSteps = [
   {
-    title: "1. Requirements Discussion",
+    title: "1. Requirement Consultation",
     description:
-      "We discuss your business goals and website objectives."
+      "We understand your business objectives, target audience, and website goals."
   },
   {
-    title: "2. Structure Planning",
+    title: "2. Website Structure Planning",
     description:
-      "CoreVision plans the website layout and page structure."
+      "A clear structure and user-friendly navigation are designed to improve user experience."
   },
   {
     title: "3. Design & Development",
     description:
-      "The website is designed and built using modern technologies."
+      "The website is developed using modern technologies and responsive design practices."
   },
   {
     title: "4. Testing & Optimisation",
     description:
-      "Performance, responsiveness, and usability are tested."
+      "Performance, device compatibility, and usability are tested before launch."
   },
   {
     title: "5. Launch & Support",
     description:
-      "The website is launched and supported when updates are required."
+      "The website is deployed and ongoing support is available for improvements and updates."
   }
 ];
 
 const relatedLinks = [
   {
-    href: "/automation-solutions",
-    title: "Automation Solutions",
+    href: "/mobile-app-development",
+    title: "Mobile App Development",
     description:
-      "Automate processes and workflows across business systems."
+      "Mobile applications for business platforms, customer portals and internal systems."
   },
   {
-    href: "/business-tools-development",
-    title: "Business Tools Development",
+    href: "/custom-software-development",
+    title: "Custom Software Development",
     description:
-      "Custom internal tools that support operational workflows."
+      "Tailored software solutions designed to support specific business workflows and operational needs."
   },
   {
     href: "/system-integrations",
     title: "System Integrations",
     description:
-      "Connect platforms and automate information flow."
+      "Connect different business platforms so data flows seamlessly between systems."
   },
   {
     href: "/projects",
     title: "Projects",
     description:
-      "Examples of CoreVision technology implementations."
+      "Examples of CoreVision technology implementations and business solutions."
   },
   {
     href: "/contact",
     title: "Contact",
     description:
-      "Discuss your website development requirements."
+      "Discuss your website development requirements with our team."
   }
 ];
 
 export default function WebsiteDevelopmentPage() {
   return (
     <>
-      <section className="section" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+      <section
+        className="section"
+        style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+      >
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
 
           <div>
             <div className="mb-4 text-sm font-medium text-white/80">
-              Website Development
+              Website Development Services
             </div>
 
             <h1 className="heading-xl mb-6 text-white">
-              Professional Websites for Growing Businesses
+              Professional Website Development for Growing Businesses
             </h1>
 
             <p className="mb-8 max-w-2xl text-lg text-white/90">
-              CoreVision develops modern business websites designed to improve
-              credibility, communicate services clearly, and support long-term
-              business growth.
+              CoreVision designs and develops modern, reliable websites for
+              businesses across Klang Valley. From company websites to service
+              platforms, we create digital experiences that support business
+              growth and customer engagement.
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Link href="/contact" className="btn-primary">
-                Start a Website Project
+                Start Your Website Project
               </Link>
 
               <Link href="/projects" className="btn-secondary-light">
@@ -161,22 +180,22 @@ export default function WebsiteDevelopmentPage() {
 
             <div className="card text-center">
               <Globe size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Corporate Websites</h3>
+              <h3 className="heading-md">Business Websites</h3>
             </div>
 
             <div className="card text-center">
               <Layout size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Service Websites</h3>
+              <h3 className="heading-md">Service Platforms</h3>
             </div>
 
             <div className="card text-center">
               <Smartphone size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Mobile Responsive</h3>
+              <h3 className="heading-md">Responsive Design</h3>
             </div>
 
             <div className="card text-center">
               <Search size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">SEO Friendly</h3>
+              <h3 className="heading-md">Performance Focused</h3>
             </div>
 
           </div>
@@ -194,21 +213,28 @@ export default function WebsiteDevelopmentPage() {
           <div className="card">
 
             <p className="text-body mb-5">
-              A professional website is often the first point of contact between
-              a business and potential customers. A well designed website helps
-              companies communicate services clearly and establish credibility.
+              A well-designed website is essential for businesses that want to
+              establish a strong online presence. It helps customers learn about
+              your services, builds credibility, and allows potential clients to
+              connect with your business easily.
             </p>
 
             <p className="text-body mb-5">
-              CoreVision provides website development services for SMEs across
-              Klang Valley. Our websites focus on clear structure, strong
-              performance, and professional design.
+              CoreVision provides professional website development services for
+              SMEs across Klang Valley. We build modern, responsive websites
+              designed to present your business professionally while ensuring
+              reliable performance across devices.
+            </p>
+
+            <p className="text-body mb-5">
+              Whether you need a company website, a service-based platform, or a
+              custom web solution, our team can design and develop a website
+              that reflects your business goals and supports long-term growth.
             </p>
 
             <p className="text-body">
-              Whether your business needs a new corporate website, service
-              platform, or landing page, our team can build a solution tailored
-              to your organisation.
+              CoreVision supports businesses across Kuala Lumpur, Petaling Jaya,
+              Subang Jaya, and the wider Klang Valley region.
             </p>
 
           </div>
@@ -242,7 +268,7 @@ export default function WebsiteDevelopmentPage() {
             <h2 className="heading-lg mb-4">Benefits for Businesses</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
             {benefits.map((benefit) => {
               const Icon = benefit.icon;
 
@@ -288,12 +314,12 @@ export default function WebsiteDevelopmentPage() {
             style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
           >
             <h2 className="heading-lg mb-4 text-white">
-              Ready to Build Your Business Website?
+              Need a Professional Website for Your Business?
             </h2>
 
             <p className="mx-auto mb-8 max-w-3xl text-white/90">
-              CoreVision can design and develop a professional website that
-              supports your business growth and online presence.
+              CoreVision can design and develop a modern website that
+              strengthens your online presence and supports business growth.
             </p>
 
             <div className="flex justify-center gap-4 flex-wrap">

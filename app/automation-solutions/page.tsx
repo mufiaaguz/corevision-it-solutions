@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Bot, Workflow, Clock, Settings } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle2,
+  Bot,
+  Workflow,
+  Clock,
+  Settings,
+  Briefcase
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Business Automation Solutions Klang Valley | CoreVision IT",
@@ -61,6 +69,12 @@ const benefits = [
     description:
       "Tasks such as reporting, monitoring, and data processing can run instantly.",
     icon: Clock
+  },
+  {
+    title: "Better Use of Staff Time",
+    description:
+      "Teams can focus on business growth instead of routine technical tasks.",
+    icon: Briefcase
   }
 ];
 
@@ -128,9 +142,11 @@ const relatedLinks = [
 export default function AutomationSolutionsPage() {
   return (
     <>
-      <section className="section" style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}>
+      <section
+        className="section"
+        style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
+      >
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
-
           <div>
             <div className="mb-4 text-sm font-medium text-white/80">
               Automation Solutions
@@ -142,8 +158,8 @@ export default function AutomationSolutionsPage() {
 
             <p className="mb-8 max-w-2xl text-lg text-white/90">
               CoreVision develops automation solutions that reduce manual tasks,
-              streamline operations, and improve productivity for businesses across
-              Klang Valley.
+              streamline operations, and improve productivity for businesses
+              across Klang Valley.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -160,40 +176,47 @@ export default function AutomationSolutionsPage() {
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="card text-center">
               <Bot size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Process Automation</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Process Automation
+              </h3>
             </div>
 
             <div className="card text-center">
               <Workflow size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Workflow Automation</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Workflow Automation
+              </h3>
             </div>
 
             <div className="card text-center">
               <Settings size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">System Automation</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                System Automation
+              </h3>
             </div>
 
             <div className="card text-center">
               <Clock size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Scheduled Tasks</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">
+                Scheduled Tasks
+              </h3>
             </div>
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container max-w-4xl">
-
           <h2 className="heading-lg mb-6 text-center">
-            Automation That Simplifies Business Operations
+            Automation Solutions for Business Operations
           </h2>
 
           <div className="card">
             <p className="text-body mb-5">
               Many businesses rely on manual processes for routine tasks such as
               reporting, system monitoring, user management, and data updates.
-              Over time, these repetitive activities consume valuable staff time.
+              Over time, these repetitive activities consume valuable staff time
+              and increase the risk of human error.
             </p>
 
             <p className="text-body mb-5">
@@ -205,17 +228,15 @@ export default function AutomationSolutionsPage() {
 
             <p className="text-body">
               Our automation solutions are designed specifically for SMEs that
-              want to improve operational efficiency without investing in complex
-              enterprise systems.
+              want to improve operational efficiency without investing in
+              complex enterprise systems.
             </p>
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Services & Capabilities</h2>
           </div>
@@ -223,23 +244,21 @@ export default function AutomationSolutionsPage() {
           <div className="grid gap-6 md:grid-cols-2">
             {services.map((service) => (
               <div key={service} className="card flex gap-4">
-                <CheckCircle2 size={22} className="text-[var(--accent-color)] mt-1" />
+                <CheckCircle2 size={22} className="mt-1 text-[var(--accent-color)]" />
                 <p className="text-body">{service}</p>
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Benefits for Businesses</h2>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
             {benefits.map((benefit) => {
               const Icon = benefit.icon;
 
@@ -252,13 +271,11 @@ export default function AutomationSolutionsPage() {
               );
             })}
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">How the Service Works</h2>
           </div>
@@ -273,13 +290,11 @@ export default function AutomationSolutionsPage() {
               </div>
             ))}
           </div>
-
         </div>
       </section>
 
       <section className="section section-white">
         <div className="container">
-
           <div
             className="card text-center"
             style={{ background: "var(--hero-gradient)", color: "#FFFFFF" }}
@@ -293,20 +308,17 @@ export default function AutomationSolutionsPage() {
               operations and improve efficiency.
             </p>
 
-            <div className="flex justify-center gap-4 flex-wrap">
+            <div className="flex flex-wrap justify-center gap-4">
               <Link href="/contact" className="btn-primary">
                 Discuss Automation Opportunities
               </Link>
             </div>
-
           </div>
-
         </div>
       </section>
 
       <section className="section section-light">
         <div className="container">
-
           <div className="mb-12 text-center">
             <h2 className="heading-lg mb-4">Related Services</h2>
           </div>
@@ -323,10 +335,8 @@ export default function AutomationSolutionsPage() {
               </Link>
             ))}
           </div>
-
         </div>
       </section>
-
     </>
   );
 }
