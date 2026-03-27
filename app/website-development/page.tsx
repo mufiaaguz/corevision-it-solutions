@@ -180,22 +180,22 @@ export default function WebsiteDevelopmentPage() {
 
             <div className="card text-center">
               <Globe size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Business Websites</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Business Websites</h3>
             </div>
 
             <div className="card text-center">
               <Layout size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Service Platforms</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Service Platforms</h3>
             </div>
 
             <div className="card text-center">
               <Smartphone size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Responsive Design</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Responsive Design</h3>
             </div>
 
             <div className="card text-center">
               <Search size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Performance Focused</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Performance Focused</h3>
             </div>
 
           </div>

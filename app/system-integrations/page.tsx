@@ -179,22 +179,22 @@ export default function SystemIntegrationsPage() {
 
             <div className="card text-center">
               <Network size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">System Connectivity</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">System Connectivity</h3>
             </div>
 
             <div className="card text-center">
               <Database size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Data Synchronisation</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Data Synchronisation</h3>
             </div>
 
             <div className="card text-center">
               <Workflow size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Workflow Automation</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Workflow Automation</h3>
             </div>
 
             <div className="card text-center">
               <Link2 size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">API Integrations</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">API Integrations</h3>
             </div>
 
           </div>

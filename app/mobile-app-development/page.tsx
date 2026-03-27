@@ -178,22 +178,22 @@ export default function MobileAppDevelopmentPage() {
 
             <div className="card text-center">
               <Smartphone size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Business Mobile Apps</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Business Mobile Apps</h3>
             </div>
 
             <div className="card text-center">
               <Workflow size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Operational Tools</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Operational Tools</h3>
             </div>
 
             <div className="card text-center">
               <Cloud size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Integrated Systems</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Integrated Systems</h3>
             </div>
 
             <div className="card text-center">
               <Layout size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Customer Platforms</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Customer Platforms</h3>
             </div>
 
           </div>

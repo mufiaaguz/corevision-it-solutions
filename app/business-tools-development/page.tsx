@@ -171,22 +171,22 @@ export default function BusinessToolsDevelopmentPage() {
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="card text-center">
               <LayoutDashboard size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Business Dashboards</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Business Dashboards</h3>
             </div>
 
             <div className="card text-center">
               <Database size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Data Management Tools</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Data Management Tools</h3>
             </div>
 
             <div className="card text-center">
               <Workflow size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Workflow Systems</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Workflow Systems</h3>
             </div>
 
             <div className="card text-center">
               <BarChart3 size={36} className="mx-auto mb-4 text-[var(--accent-color)]" />
-              <h3 className="heading-md">Reporting Platforms</h3>
+              <h3 className="heading-md text-[var(--primary-color)]">Reporting Platforms</h3>
             </div>
           </div>
 

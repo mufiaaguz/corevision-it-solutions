@@ -179,3 +179,4 @@ next-env.d.ts
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 >>>>>>> 466184aea7a130d890b93679afa4033568f65d54
+.env*.local
