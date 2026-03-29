@@ -7,6 +7,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import SupportBar from "@/components/SupportBar";
 
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: {
@@ -121,6 +122,9 @@ export default function RootLayout({
         {/* Floating Elements */}
         <WhatsAppButton />
         <SupportBar />
+
+        {/* Vercel Web Analytics */}
+        <Analytics />
 
       </body>
     </html>
