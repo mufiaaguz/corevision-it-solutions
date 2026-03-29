@@ -23,6 +23,10 @@ export default function Footer() {
             Supporting businesses across Kuala Lumpur, Petaling Jaya,
             Shah Alam, Subang Jaya and surrounding Klang Valley areas.
           </p>
+
+          <p className="text-xs mt-4" style={{ color: "var(--accent-light)" }}>
+            No. 28, Jalan Raja Jumaat, Taman Sri Istana, 41000, Klang Selangor
+          </p>
         </div>
 
         {/* Infrastructure */}

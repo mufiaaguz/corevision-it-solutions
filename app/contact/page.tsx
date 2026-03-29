@@ -81,6 +81,16 @@ export default function Contact() {
             </p>
           </div>
 
+          <div className="card">
+            <h3 className="heading-md mb-4">Business Address</h3>
+            <p className="text-gray-600 mb-4">
+              Visit us at our business location.
+            </p>
+            <p className="font-semibold text-lg">
+              No. 28, Jalan Raja Jumaat, Taman Sri Istana, 41000, Klang Selangor
+            </p>
+          </div>
+
         </div>
       </section>
 
@@ -110,7 +120,7 @@ export default function Contact() {
         <div className="container max-w-3xl mx-auto">
 
           <iframe
-            src="https://www.google.com/maps?q=Klang+Valley+Malaysia&output=embed"
+            src="https://www.google.com/maps?q=No.+28,+Jalan+Raja+Jumaat,+Taman+Sri+Istana,+41000,+Klang+Selangor&output=embed"
             width="100%"
             height="350"
             style={{ border: 0 }}

@@ -91,6 +91,14 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "CoreVision IT Solutions",
               url: "https://www.corevisionitsolutions.com",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "No. 28, Jalan Raja Jumaat, Taman Sri Istana",
+                addressLocality: "Klang",
+                addressRegion: "Selangor",
+                postalCode: "41000",
+                addressCountry: "MY",
+              },
               areaServed: "Klang Valley, Malaysia",
               serviceType: "Managed IT Services",
               description:
